@@ -9,15 +9,26 @@
 <body>
     <h1>Welkom Fietswinkel</h1>
 
-    
-    <form action="">
-        <label for="men"></label>
-        <label for="women"></label>
-        <label for="men"></label>
-        <label for="men"></label>
-        <label for="men"></label>
-        <label for="men"></label>
-        <label for="men"></label>
-    </form>
+    <form method="post" action="Tests/post">
+        <fieldset>
+            <input type="radio" name="fietstype" value="Stadsfiets dames">Stadsfiets dames<br>
+            <input type="radio" name="fietstype" value="Stadsfiets heren">Stadsfiets heren<br>
+            <input type="radio" name="fietstype" value="Electrische fiets dames">Electrische fiets dames<br>
+            <input type="radio" name="fietstype" value="Electrische fiets heren">Electrische fiets heren<br>
+            <input type="radio" name="fietstype" value="Vouwfiets">Vouwfiets<br>
+            <br>
+            <input type="submit" value="Submit now">
+        </fieldset>
+
+    <form method="post" action="Tests/post">
+        <fieldset>
+            <input type="radio" name="fietskader" value="Maat 43">Maat 43<br>
+            <input type="radio" name="fietskader" value="Maat 50">Maat 50<br>
+            <input type="radio" name="fietskader" value="Maat 57">Maat 57<br>
+            <input type="radio" name="fietskader" value="Maat 61">Maat 61<br>
+            <input type="radio" name="fietskader" value="Geen maat">Geen maat<br>
+            <br>
+            <input type="submit" value="Submit now">
+        </fieldset>
 </body>
 </html>
