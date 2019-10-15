@@ -2,10 +2,12 @@ $(document).ready(function() {
   
   // reageer op change event op radio button
   $("[name='fietstype']").on("change", function(){
+    
     var checked = $("[name='fietstype']:checked").val();
     console.log(checked);
 
     if(checked == "Stadsfiets dames"){
+
       alert('true');
       $("[for='Maat 43']").hide();
       $("#Maat43").hide();
@@ -21,9 +23,11 @@ $(document).ready(function() {
 
       $("[for='Maat 57']").show();
       $("#Maat57").show();
+
     }
 
     if(checked == "Stadsfiets heren"){
+
       alert('true');
       $("[for='Maat 43']").hide();
       $("#Maat43").hide();
@@ -39,9 +43,11 @@ $(document).ready(function() {
 
       $("[for='Maat 61']").show();
       $("#Maat61").show();
+
     }
 
     if(checked == "Electrische fiets dames"){
+
       alert('true');
       $("[for='Maat 61']").hide();
       $("#Maat61").hide();
@@ -57,9 +63,11 @@ $(document).ready(function() {
 
       $("[for='Maat 57']").show();
       $("#Maat57").show();
+
     }
 
     if(checked == "Electrische fiets heren"){
+
       alert('true');
       $("[for='Maat 43']").hide();
       $("#Maat43").hide();
@@ -75,9 +83,11 @@ $(document).ready(function() {
 
       $("[for='Maat 61']").show();
       $("#Maat61").show();
+
     }
 
     if(checked == "Vouwfiets"){
+
       alert('true');
       $("[for='Maat 43']").hide();
       $("#Maat43").hide();
@@ -93,6 +103,9 @@ $(document).ready(function() {
 
       $("[for='Geen maat']").show();
       $("#Geen-maat").show();
+
     }
+
   })
+
 })
