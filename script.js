@@ -7,21 +7,23 @@ $(document).ready(function() {
 
     if(checked == "Stadsfiets dames"){
       alert('true');
+      $("[for='Maat 43']").hide();
+      $("#Maat43").hide();
+      
       $("[for='Maat 61']").hide();
       $("#Maat61").hide();
-      
+
+      $("[for='Geen maat']").hide();
+      $("#Geen-maat").hide();
+    }
+
+    if(checked == "Stadsfiets heren"){
+      alert('true');
       $("[for='Maat 43']").hide();
       $("#Maat43").hide();
 
       $("[for='Geen maat']").hide();
       $("#Geen-maat").hide();
-
-    }else{
-      alert('not true');
     }
-
   })
-
-
-
-});
+})
