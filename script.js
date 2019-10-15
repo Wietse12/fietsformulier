@@ -9,6 +9,12 @@ $(document).ready(function() {
       alert('true');
       $("[for='Maat 61']").hide();
       $("#Maat61").hide();
+      
+      $("[for='Maat 43']").hide();
+      $("#Maat43").hide();
+
+      $("[for='Geen maat']").hide();
+      $("#Geen-maat").hide();
 
     }else{
       alert('not true');
